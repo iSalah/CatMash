@@ -14,6 +14,8 @@
 		4E0872681F7B8FDB00ADAEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0872661F7B8FDB00ADAEE3 /* LaunchScreen.storyboard */; };
 		4EB231141F7BAE020018D3FF /* DrawableMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB231131F7BAE020018D3FF /* DrawableMenuViewController.swift */; };
 		4EB231161F7BAF560018D3FF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB231151F7BAF560018D3FF /* MenuViewController.swift */; };
+		4EB231181F7BD1450018D3FF /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB231171F7BD1450018D3FF /* MenuItem.swift */; };
+		4EB2311B1F7BD97A0018D3FF /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB2311A1F7BD97A0018D3FF /* MenuCell.swift */; };
 		6E9777CCFD952EA10DCE1821 /* Pods_CatMash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E21B16C02EBCF84E554AD4 /* Pods_CatMash.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		4E0872691F7B8FDB00ADAEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB231131F7BAE020018D3FF /* DrawableMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawableMenuViewController.swift; sourceTree = "<group>"; };
 		4EB231151F7BAF560018D3FF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4EB231171F7BD1450018D3FF /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		4EB2311A1F7BD97A0018D3FF /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C4189A843EECEDDB009C9AE7 /* Pods-CatMash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatMash.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatMash/Pods-CatMash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,7 @@
 		4E08727C1F7B957900ADAEE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4EB231191F7BD95A0018D3FF /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 		4E08727E1F7B958300ADAEE3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4EB231171F7BD1450018D3FF /* MenuItem.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				4E0872641F7B8FDB00ADAEE3 /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		4EB231191F7BD95A0018D3FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4EB2311A1F7BD97A0018D3FF /* MenuCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		7041231F3E8769835D2BBCD1 /* Frameworks */ = {
@@ -299,8 +313,10 @@
 			files = (
 				4E0872601F7B8FDB00ADAEE3 /* ViewController.swift in Sources */,
 				4E08725E1F7B8FDB00ADAEE3 /* AppDelegate.swift in Sources */,
+				4EB2311B1F7BD97A0018D3FF /* MenuCell.swift in Sources */,
 				4EB231141F7BAE020018D3FF /* DrawableMenuViewController.swift in Sources */,
 				4EB231161F7BAF560018D3FF /* MenuViewController.swift in Sources */,
+				4EB231181F7BD1450018D3FF /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
