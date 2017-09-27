@@ -54,14 +54,94 @@
 		4E08725C1F7B8FDB00ADAEE3 /* CatMash */ = {
 			isa = PBXGroup;
 			children = (
-				4E08725D1F7B8FDB00ADAEE3 /* AppDelegate.swift */,
-				4E08725F1F7B8FDB00ADAEE3 /* ViewController.swift */,
-				4E0872611F7B8FDB00ADAEE3 /* Main.storyboard */,
-				4E0872641F7B8FDB00ADAEE3 /* Assets.xcassets */,
-				4E0872661F7B8FDB00ADAEE3 /* LaunchScreen.storyboard */,
-				4E0872691F7B8FDB00ADAEE3 /* Info.plist */,
+				4E0872821F7B961800ADAEE3 /* Config */,
+				4E0872781F7B955A00ADAEE3 /* Application */,
+				4E08727B1F7B957100ADAEE3 /* Controllers */,
+				4E08727C1F7B957900ADAEE3 /* Views */,
+				4E08727D1F7B957E00ADAEE3 /* Models */,
+				4E0872801F7B95A200ADAEE3 /* Services */,
+				4E0872811F7B95EF00ADAEE3 /* UI */,
+				4E08727E1F7B958300ADAEE3 /* Helpers */,
+				4E08727F1F7B959C00ADAEE3 /* CoreData */,
+				4E0872831F7B962500ADAEE3 /* Assets */,
 			);
 			path = CatMash;
+			sourceTree = "<group>";
+		};
+		4E0872781F7B955A00ADAEE3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4E08725D1F7B8FDB00ADAEE3 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		4E08727B1F7B957100ADAEE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E08725F1F7B8FDB00ADAEE3 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4E08727C1F7B957900ADAEE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4E08727D1F7B957E00ADAEE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4E08727E1F7B958300ADAEE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		4E08727F1F7B959C00ADAEE3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		4E0872801F7B95A200ADAEE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		4E0872811F7B95EF00ADAEE3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4E0872661F7B8FDB00ADAEE3 /* LaunchScreen.storyboard */,
+				4E0872611F7B8FDB00ADAEE3 /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4E0872821F7B961800ADAEE3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4E0872691F7B8FDB00ADAEE3 /* Info.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		4E0872831F7B962500ADAEE3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4E0872641F7B8FDB00ADAEE3 /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
