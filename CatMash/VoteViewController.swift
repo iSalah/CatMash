@@ -15,6 +15,9 @@ class VoteViewController: DrawableMenuViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Cat.fetchCats { cats in
+            Cat.save(cats: cats)
+        }
     }
 
 }
