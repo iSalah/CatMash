@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote View Controller-->
+        <scene sceneID="PtE-5Y-xo7">
+            <objects>
+                <viewController storyboardIdentifier="VoteViewController" id="KPH-Ww-KvZ" customClass="VoteViewController" customModule="CatMash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ib-U7-5fx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-fZ-xfl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="318.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LG6-qD-Xmi">
+                                <rect key="frame" x="0.0" y="348.5" width="375" height="318.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vx0-fZ-xfl" firstAttribute="trailing" secondItem="giB-L6-n7m" secondAttribute="trailing" id="9dq-7w-GNX"/>
+                            <constraint firstItem="vx0-fZ-xfl" firstAttribute="leading" secondItem="giB-L6-n7m" secondAttribute="leading" id="9fG-X9-5WT"/>
+                            <constraint firstItem="vx0-fZ-xfl" firstAttribute="top" secondItem="giB-L6-n7m" secondAttribute="top" id="b3F-lS-tKD"/>
+                            <constraint firstItem="LG6-qD-Xmi" firstAttribute="height" secondItem="vx0-fZ-xfl" secondAttribute="height" id="cLu-NT-JaB"/>
+                            <constraint firstItem="LG6-qD-Xmi" firstAttribute="top" secondItem="vx0-fZ-xfl" secondAttribute="bottom" constant="10" id="dbp-5n-qTB"/>
+                            <constraint firstItem="giB-L6-n7m" firstAttribute="trailing" secondItem="LG6-qD-Xmi" secondAttribute="trailing" id="gNe-Ro-sWB"/>
+                            <constraint firstItem="LG6-qD-Xmi" firstAttribute="leading" secondItem="giB-L6-n7m" secondAttribute="leading" id="pMg-Vl-hnC"/>
+                            <constraint firstItem="giB-L6-n7m" firstAttribute="bottom" secondItem="LG6-qD-Xmi" secondAttribute="bottom" id="tB5-8n-ce0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="giB-L6-n7m"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rhW-bZ-Rch"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5Q-le-8o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="69.715142428785612"/>
+        </scene>
+    </scenes>
+</document>

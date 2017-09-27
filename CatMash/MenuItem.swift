@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum MenuItem {
     case vote
@@ -16,6 +17,16 @@ enum MenuItem {
         switch self {
         case .vote: return "Vote"
         case .ranking: return "Ranking"
+        }
+    }
+    
+    var viewController: UIViewController? {
+        switch self {
+        case .vote:
+            let storyboard = UIStoryboard(name: "Vote", bundle: nil)
+            return storyboard.instantiateViewController(withIdentifier: VoteViewController.identifier)
+        case .ranking:
+            return nil
         }
     }
 }

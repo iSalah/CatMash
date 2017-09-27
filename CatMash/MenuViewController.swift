@@ -28,4 +28,11 @@ class MenuViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuItem = menuItems[indexPath.row]
+        if let vc = menuItem.viewController {
+            self.evo_drawerController?.setCenter(UINavigationController(rootViewController: vc), withCloseAnimation: true, completion: nil)
+        }
+    }
+    
 }

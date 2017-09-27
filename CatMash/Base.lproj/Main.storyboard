@@ -106,28 +106,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="wuJ-As-4uP" kind="relationship" relationship="rootViewController" id="sDO-hH-HPt"/>
+                        <segue destination="sm6-Da-oV9" kind="relationship" relationship="rootViewController" id="6hB-qB-ePw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JV2-fx-VSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="124" y="726"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nXm-1W-0fo">
+        <!--VoteViewController-->
+        <scene sceneID="s8p-a3-TzM">
             <objects>
-                <viewController id="wuJ-As-4uP" customClass="ViewController" customModule="CatMash" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Zaq-5d-jlD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="sJy-jd-4gf"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="MAq-sF-ZZc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KB4-ZZ-euf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Vote" referencedIdentifier="VoteViewController" id="sm6-Da-oV9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pPM-EQ-q3t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJQ-o2-X9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="725"/>
+            <point key="canvasLocation" x="892" y="725"/>
         </scene>
     </scenes>
     <resources>
