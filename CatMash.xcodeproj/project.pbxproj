@@ -28,6 +28,7 @@
 		4EC6A8541F7CFD8D003AF682 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6A8531F7CFD8D003AF682 /* Ranking.storyboard */; };
 		4EC6A8561F7CFDB1003AF682 /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8551F7CFDB1003AF682 /* CatCell.swift */; };
 		4EC6A8581F7D0EC4003AF682 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8571F7D0EC4003AF682 /* RankingViewController.swift */; };
+		4EC6A85A1F7D2D39003AF682 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8591F7D2D39003AF682 /* CatViewController.swift */; };
 		6E9777CCFD952EA10DCE1821 /* Pods_CatMash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E21B16C02EBCF84E554AD4 /* Pods_CatMash.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		4EC6A8531F7CFD8D003AF682 /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
 		4EC6A8551F7CFDB1003AF682 /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
 		4EC6A8571F7D0EC4003AF682 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		4EC6A8591F7D2D39003AF682 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
 		C4189A843EECEDDB009C9AE7 /* Pods-CatMash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatMash.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatMash/Pods-CatMash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				4EB231131F7BAE020018D3FF /* DrawableMenuViewController.swift */,
 				4EB231151F7BAF560018D3FF /* MenuViewController.swift */,
 				4EC6A8571F7D0EC4003AF682 /* RankingViewController.swift */,
+				4EC6A8591F7D2D39003AF682 /* CatViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				4E0872601F7B8FDB00ADAEE3 /* VoteViewController.swift in Sources */,
 				4EC6A8521F7CE9E8003AF682 /* CollectionExtensions.swift in Sources */,
 				4E08725E1F7B8FDB00ADAEE3 /* AppDelegate.swift in Sources */,
+				4EC6A85A1F7D2D39003AF682 /* CatViewController.swift in Sources */,
 				4EB2311B1F7BD97A0018D3FF /* MenuCell.swift in Sources */,
 				4EB231141F7BAE020018D3FF /* DrawableMenuViewController.swift in Sources */,
 				4EB231221F7BE85D0018D3FF /* Cat.swift in Sources */,
