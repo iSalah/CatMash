@@ -11,6 +11,18 @@ import CoreData
 
 extension Cat {
     
+    class var allCats: [Cat] {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: Cat.entityName)
+        let result = try? ManagerCoreData.shared.managedContext.fetch(request)
+        return result?.map({Cat(fromEntity: $0 as! CatEntity)}).flatMap({$0}) ?? []
+    }
+    
+    class var mash: [Cat]? {
+        let cats = allCats
+        guard cats.count >= 2 else { return nil }
+        return Array(cats.shuffled().prefix(2))
+    }
+    
     class func save(cats: [Cat]) {
         for cat in cats {
             Cat.save(cat: cat)

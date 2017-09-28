@@ -24,6 +24,7 @@
 		4EC6A84B1F7BF30E003AF682 /* CatEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8491F7BF30E003AF682 /* CatEntity+CoreDataProperties.swift */; };
 		4EC6A84D1F7BF53B003AF682 /* ManagerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A84C1F7BF53B003AF682 /* ManagerCoreData.swift */; };
 		4EC6A84F1F7BFC84003AF682 /* Cat+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A84E1F7BFC84003AF682 /* Cat+CoreData.swift */; };
+		4EC6A8521F7CE9E8003AF682 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8511F7CE9E8003AF682 /* CollectionExtensions.swift */; };
 		6E9777CCFD952EA10DCE1821 /* Pods_CatMash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E21B16C02EBCF84E554AD4 /* Pods_CatMash.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		4EC6A8491F7BF30E003AF682 /* CatEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CatEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4EC6A84C1F7BF53B003AF682 /* ManagerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerCoreData.swift; sourceTree = "<group>"; };
 		4EC6A84E1F7BFC84003AF682 /* Cat+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cat+CoreData.swift"; sourceTree = "<group>"; };
+		4EC6A8511F7CE9E8003AF682 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		C4189A843EECEDDB009C9AE7 /* Pods-CatMash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatMash.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatMash/Pods-CatMash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 		4E08727E1F7B958300ADAEE3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4EC6A8501F7CE9D4003AF682 /* Extensions */,
 				4EB231171F7BD1450018D3FF /* MenuItem.swift */,
 				4EC6A84C1F7BF53B003AF682 /* ManagerCoreData.swift */,
 			);
@@ -202,6 +205,14 @@
 				4EB2311A1F7BD97A0018D3FF /* MenuCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		4EC6A8501F7CE9D4003AF682 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EC6A8511F7CE9E8003AF682 /* CollectionExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		7041231F3E8769835D2BBCD1 /* Frameworks */ = {
@@ -337,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0872601F7B8FDB00ADAEE3 /* VoteViewController.swift in Sources */,
+				4EC6A8521F7CE9E8003AF682 /* CollectionExtensions.swift in Sources */,
 				4E08725E1F7B8FDB00ADAEE3 /* AppDelegate.swift in Sources */,
 				4EB2311B1F7BD97A0018D3FF /* MenuCell.swift in Sources */,
 				4EB231141F7BAE020018D3FF /* DrawableMenuViewController.swift in Sources */,
