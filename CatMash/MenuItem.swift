@@ -26,7 +26,8 @@ enum MenuItem {
             let storyboard = UIStoryboard(name: "Vote", bundle: nil)
             return storyboard.instantiateViewController(withIdentifier: VoteViewController.identifier)
         case .ranking:
-            return nil
+            let storyboard = UIStoryboard(name: "Ranking", bundle: nil)
+            return storyboard.instantiateViewController(withIdentifier: RankingViewController.identifier)
         }
     }
 }
