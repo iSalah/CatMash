@@ -8,6 +8,7 @@
 
 import UIKit
 import DrawerController
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         drawerController.showsShadows = true
         drawerController.openDrawerGestureModeMask = .all
         drawerController.closeDrawerGestureModeMask = .all
+        
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
+        SVProgressHUD.setBackgroundColor(UIColor.clear)
+        SVProgressHUD.setForegroundColor(UIColor.white)
 
         return true
     }
