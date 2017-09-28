@@ -26,6 +26,7 @@
 		4EC6A84F1F7BFC84003AF682 /* Cat+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A84E1F7BFC84003AF682 /* Cat+CoreData.swift */; };
 		4EC6A8521F7CE9E8003AF682 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8511F7CE9E8003AF682 /* CollectionExtensions.swift */; };
 		4EC6A8541F7CFD8D003AF682 /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC6A8531F7CFD8D003AF682 /* Ranking.storyboard */; };
+		4EC6A8561F7CFDB1003AF682 /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8551F7CFDB1003AF682 /* CatCell.swift */; };
 		4EC6A8581F7D0EC4003AF682 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC6A8571F7D0EC4003AF682 /* RankingViewController.swift */; };
 		6E9777CCFD952EA10DCE1821 /* Pods_CatMash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E21B16C02EBCF84E554AD4 /* Pods_CatMash.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		4EC6A84E1F7BFC84003AF682 /* Cat+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cat+CoreData.swift"; sourceTree = "<group>"; };
 		4EC6A8511F7CE9E8003AF682 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		4EC6A8531F7CFD8D003AF682 /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
+		4EC6A8551F7CFDB1003AF682 /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
 		4EC6A8571F7D0EC4003AF682 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		C4189A843EECEDDB009C9AE7 /* Pods-CatMash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatMash.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatMash/Pods-CatMash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB2311A1F7BD97A0018D3FF /* MenuCell.swift */,
+				4EC6A8551F7CFDB1003AF682 /* CatCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				4EB2311B1F7BD97A0018D3FF /* MenuCell.swift in Sources */,
 				4EB231141F7BAE020018D3FF /* DrawableMenuViewController.swift in Sources */,
 				4EB231221F7BE85D0018D3FF /* Cat.swift in Sources */,
+				4EC6A8561F7CFDB1003AF682 /* CatCell.swift in Sources */,
 				4EB231161F7BAF560018D3FF /* MenuViewController.swift in Sources */,
 				4EC6A84F1F7BFC84003AF682 /* Cat+CoreData.swift in Sources */,
 				4EC6A84D1F7BF53B003AF682 /* ManagerCoreData.swift in Sources */,
