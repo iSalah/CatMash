@@ -27,11 +27,27 @@ class VoteViewController: DrawableMenuViewController {
     }
     
     func newMash() {
-        self.mash = Cat.mash
-        guard mash != nil && mash!.count == 2 else { return }
-        
-        cat1Button.sd_setImage(with: URL(string: self.mash!.first!.url), for: .normal, completed: nil)
-        cat2Button.sd_setImage(with: URL(string: self.mash!.last!.url), for: .normal, completed: nil)
+        if let mash = Cat.mash, mash.count == 2 {
+            cat1Button.sd_setImage(with: URL(string: mash.first!.url), for: .normal, completed: nil)
+            cat2Button.sd_setImage(with: URL(string: mash.last!.url), for: .normal, completed: nil)
+            self.mash = mash
+        }
+        else {
+            cat1Button.setImage(nil, for: .normal)
+            cat2Button.setImage(nil, for: .normal)
+            self.mash = nil
+        }
+    }
+    
+    @IBAction func vote(_ sender: UIButton) {
+        guard let mash = mash, mash.count == 2 else { return }
+        let winnerCat = sender == cat1Button ? mash.first! : mash.last!
+        let looserCat = sender == cat1Button ? mash.last! : mash.first!
+        winnerCat.wins(against: looserCat)
+        looserCat.loses(against: winnerCat)
+        winnerCat.updateScore()
+        looserCat.updateScore()
+        newMash()
     }
 
 }

@@ -20,9 +20,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC6-Mg-MXY">
                                 <rect key="frame" x="0.0" y="20" width="375" height="313.5"/>
+                                <connections>
+                                    <action selector="vote:" destination="KPH-Ww-KvZ" eventType="touchUpInside" id="KH6-y7-65N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir8-e8-887">
                                 <rect key="frame" x="0.0" y="353.5" width="375" height="313.5"/>
+                                <connections>
+                                    <action selector="vote:" destination="KPH-Ww-KvZ" eventType="touchUpInside" id="BTU-xM-PtF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

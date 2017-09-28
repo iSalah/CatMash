@@ -33,4 +33,16 @@ class Cat {
         self.url = url
         self.score = NSNumber(value: entity.score).intValue
     }
+    
+    func wins(against cat: Cat) {
+        let expected = Double(1/(1+pow(10, ((cat.score - self.score)/400))) as NSNumber)
+        let score = Double(self.score) + 32 * (1 - expected)
+        self.score = Int(score.rounded())
+    }
+    
+    func loses(against cat: Cat) {
+        let expected = Double(1/(1+pow(10, ((cat.score - self.score)/400))) as NSNumber)
+        let score = Double(self.score) + 32 * (-expected)
+        self.score = Int(score.rounded())
+    }
 }

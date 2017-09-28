@@ -41,6 +41,12 @@ extension Cat {
         ManagerCoreData.shared.saveContext()
     }
     
+    func updateScore() {
+        guard let entity = Cat.find(id: self.id) else { return }
+        entity.score = NSNumber(value: self.score).int32Value
+        ManagerCoreData.shared.saveContext()
+    }
+    
     class func find(id: String) -> CatEntity? {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: Cat.entityName)
         request.predicate = NSPredicate(format: "id = \'\(id)\' ")
