@@ -71,11 +71,41 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Fwh-O2-SEs" id="tqz-aL-vlk"/>
+                        <segue destination="QUx-bN-gah" kind="show" identifier="showCatSegue" id="a4f-3a-ha2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ha-gY-7gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-804" y="46"/>
+        </scene>
+        <!--Cat View Controller-->
+        <scene sceneID="fsz-Z3-A6e">
+            <objects>
+                <viewController id="QUx-bN-gah" customClass="CatViewController" customModule="CatMash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PGd-o7-vST">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtq-p8-oOS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dtq-p8-oOS" firstAttribute="leading" secondItem="ETf-m7-Htp" secondAttribute="leading" id="A6U-gZ-uHU"/>
+                            <constraint firstItem="dtq-p8-oOS" firstAttribute="top" secondItem="ETf-m7-Htp" secondAttribute="top" id="jt8-QN-pCR"/>
+                            <constraint firstItem="ETf-m7-Htp" firstAttribute="trailing" secondItem="dtq-p8-oOS" secondAttribute="trailing" id="o3o-cn-zhJ"/>
+                            <constraint firstItem="ETf-m7-Htp" firstAttribute="bottom" secondItem="dtq-p8-oOS" secondAttribute="bottom" id="xEY-7H-ptT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ETf-m7-Htp"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dtq-p8-oOS" id="ZNP-vd-Zfs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnQ-Rg-quf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="45"/>
         </scene>
     </scenes>
 </document>

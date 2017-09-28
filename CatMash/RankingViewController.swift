@@ -15,6 +15,15 @@ class RankingViewController: DrawableMenuViewController, UITableViewDelegate, UI
     
     @IBOutlet weak var tableView: UITableView!
     var cats = [Cat]()
+    var selectedCat: Cat?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "showCatSegue" {
+            let vc = segue.destination as! CatViewController
+            vc.cat = selectedCat
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +47,11 @@ class RankingViewController: DrawableMenuViewController, UITableViewDelegate, UI
         let cell = tableView.dequeueReusableCell(withIdentifier: CatCell.identifier) as! CatCell
         cell.configCell(withCat: cat, rank: rank)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedCat = cats[indexPath.row]
+        self.performSegue(withIdentifier: "showCatSegue", sender: nil)
     }
 
 }
